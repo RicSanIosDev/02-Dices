@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_Dices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casino-background" translatesAutoresizingMaskIntoConstraints="NO" id="Juu-OJ-jZ0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OID-At-OBI">
+                                <rect key="frame" x="112" y="408" width="190" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="CCa-Jj-vLT">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Jtm-CA-4Wp"/>
+                                            <constraint firstAttribute="height" constant="80" id="bS0-eF-6ZE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Z-P3-PUl">
+                                        <rect key="frame" x="110" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="66u-qE-XIW"/>
+                                            <constraint firstAttribute="height" constant="80" id="WQC-7k-wzO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-casino" translatesAutoresizingMaskIntoConstraints="NO" id="cqk-Sf-GWu">
+                                <rect key="frame" x="87" y="124" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cqk-Sf-GWu" secondAttribute="height" multiplier="15:8" id="E3M-GG-V0d"/>
+                                    <constraint firstAttribute="width" constant="240" id="U2D-5h-TK8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXo-dF-IFQ">
+                                <rect key="frame" x="93.5" y="568" width="227" height="53"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Tirar los dados">
+                                    <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0j6-Qr-gYo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyU-48-h7G">
+                                <rect key="frame" x="137" y="663" width="140.5" height="68.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" red="0.89508645304568524" green="0.71448266231774671" blue="0.0066925711664004286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Juu-OJ-jZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9VG-09-76U"/>
+                            <constraint firstItem="cqk-Sf-GWu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="C75-cH-PES"/>
+                            <constraint firstItem="FyU-48-h7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKe-cn-n5G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Juu-OJ-jZ0" secondAttribute="bottom" id="Rqi-Vt-5aN"/>
+                            <constraint firstItem="AXo-dF-IFQ" firstAttribute="top" secondItem="OID-At-OBI" secondAttribute="bottom" constant="80" id="Wxn-0Q-vRz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Juu-OJ-jZ0" secondAttribute="trailing" id="XSY-CF-xhl"/>
+                            <constraint firstItem="cqk-Sf-GWu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cme-eG-5B0"/>
+                            <constraint firstItem="AXo-dF-IFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhs-ny-hFw"/>
+                            <constraint firstItem="FyU-48-h7G" firstAttribute="top" secondItem="AXo-dF-IFQ" secondAttribute="bottom" constant="42" id="jhQ-V3-RXj"/>
+                            <constraint firstItem="Juu-OJ-jZ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l2o-rD-crA"/>
+                            <constraint firstItem="OID-At-OBI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rfG-im-A3x"/>
+                            <constraint firstItem="OID-At-OBI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rpQ-Ha-zQE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewDiceLeft" destination="CCa-Jj-vLT" id="Y5J-21-SKn"/>
+                        <outlet property="imageViewDiceRight" destination="Z4Z-P3-PUl" id="rhg-Ys-m53"/>
+                        <outlet property="labelResult" destination="FyU-48-h7G" id="Zsq-rP-yC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="casino-background" width="333.5" height="335"/>
+        <image name="dice1" width="52" height="50.5"/>
+        <image name="logo-casino" width="343" height="193.5"/>
+    </resources>
+</document>
